@@ -16,8 +16,7 @@ function checkPalindrome(){
 
 function isPalindrome(str){
     let strTrimmed = str.trim();
-    let str1 = strTrimmed.split('').reverse().join('');
-    return strTrimmed.toLowerCase() === str1.toLowerCase();
+    return strTrimmed.toLowerCase() === reverseStr(str).toLowerCase();
 
 }
 
@@ -46,7 +45,6 @@ function countChar(str,c){
         if(strArr[i] === c){
             count++;
         }
-        console.log(count);
     }
     return count;
 }
